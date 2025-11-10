@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Learning-enabled Gait Assessment in Parkinson's Disease</title>
+    <meta name="description" content="A smartphone video-based framework for precise assessment of Parkinson's disease severity using deep learning">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Deep Learning-enabled Accurate Assessment of Gait Impairments in Parkinson's Disease</h1>
+            <p>A novel smartphone video-based framework for precise assessment of Parkinson's disease severity and medication response using deep learning and interpretable digital biomarkers.</p>
+            <div class="header-buttons">
+                <a href="#abstract" class="btn">Learn More</a>
+                <a href="#demo" class="btn btn-light">Try Demo</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="abstract">
+        <div class="container">
+            <h2>Abstract</h2>
+            <div class="highlight">
+                <p>Gait impairments are among the most prevalent and disabling symptoms in Parkinson's Disease (PD), featuring complex and highly heterogeneous manifestations. We propose a deep learning-based framework to assess gait impairments using smartphone-recorded videos. This framework demonstrated high proficiency in predicting PD severity, with a micro-average area under the receiver operating characteristic curve (AUC) of 0.87 and an F1 score of 0.806, comparable to the average performance of three clinical specialists. Additionally, it effectively discerned the comprehensive efficacy of medications on gait impairments with a precision of 73.68%.</p>
+            </div>
+            
+            <div class="metrics">
+                <div class="metric">
+                    <div class="metric-value">0.87</div>
+                    <div class="metric-label">Micro-average AUC</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">0.806</div>
+                    <div class="metric-label">F1 Score</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">73.68%</div>
+                    <div class="metric-label">Medication Effect Precision</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">Clinician-level</div>
+                    <div class="metric-label">Performance</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="introduction" class="bg-light">
+        <div class="container">
+            <h2>Introduction</h2>
+            <p>Parkinson's disease (PD) is the second most prevalent progressive neurodegenerative disorder, affecting more than 10 million people worldwide. Gait impairments are among the most common and disabling symptoms in PD, characterized by intricate underlying mechanisms and substantial individual variation in clinical manifestations.</p>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-img">
+                        <div class="placeholder-img">Gait Impairment Visualization</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Problem</h3>
+                        <p>Current clinical rating scales like UPDRS have low sensitivity, inherent subjectivity, and dependency on clinical specialists, limiting their utility in routine assessment of gait impairments.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-img">
+                        <div class="placeholder-img">Smartphone Video Analysis</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Solution</h3>
+                        <p>Our framework uses smartphone-recorded videos and deep learning to provide objective, precise assessment of gait impairments, enabling home-based monitoring.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-img">
+                        <div class="placeholder-img">Digital Biomarkers</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Innovation</h3>
+                        <p>We extract both traditional clinically used motion markers and discover novel digital biomarkers sensitive to disease progression and medication response.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="method">
+        <div class="container">
+            <h2>Methodology</h2>
+            <p>We developed a novel Siamese contrastive network architecture that efficiently extracts precise spatiotemporal motion characteristics of the entire body joints from gait videos recorded with a single smartphone.</p>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-img">
+                        <div class="placeholder-img">Siamese Network Architecture</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Siamese Contrastive Network</h3>
+                        <p>Our architecture fuses gait videos recorded from both left and right lateral perspectives during shuttle walks, ensuring accurate identification of lateral motion characteristics.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-img">
+                        <div class="placeholder-img">Skeleton Extraction</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Pose Estimation</h3>
+                        <p>We extract body skeletons from smartphone videos using DWPose, with modifications to correct misdetections of leg keypoints for accurate feature extraction.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-img">
+                        <div class="placeholder-img">Interpretable Analysis</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Interpretable Framework</h3>
+                        <p>Our model analyzes personalized joint impacts on gait impairment severity over walking time, enabling extraction of both traditional and novel digital biomarkers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="results" class="bg-light">
+        <div class="container">
+            <h2>Key Results</h2>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-img">
+                        <div class="placeholder-img">UPDRS Prediction Performance</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Severity Assessment</h3>
+                        <p>The model demonstrated high accuracy in predicting gait impairment severity, with performance comparable to clinical experts (F1 score: 0.806).</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-img">
+                        <div class="placeholder-img">Medication Response</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Medication Effect Discrimination</h3>
+                        <p>Our framework accurately identified medication-induced changes in gait impairments with 73.68% precision, including subtle responses undetectable by UPDRS.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-img">
+                        <div class="placeholder-img">Digital Biomarkers</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Biomarker Discovery</h3>
+                        <p>We identified novel digital biomarkers sensitive to disease progression and medication response, such as linear velocities and accelerations of skeletal joints.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="highlight">
+                <h3>Clinical Validation</h3>
+                <p>The model's performance was validated against the consensus of three clinical specialists, demonstrating alignment with expert assessments and the ability to handle inter-rater variability.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="demo">
+        <div class="container">
+            <h2>Online Assessment System</h2>
+            <p>We developed an online assessment system (FAGI-PD) that enables home-based, objective, routine assessments of gait impairments in Parkinson's disease using smartphone-recorded videos.</p>
+            
+            <div class="demo-link">
+                <a href="https://gaitanalysis.simplaj.fun" class="btn" target="_blank" rel="noopener">Try FAGI-PD System</a>
+            </div>
+            
+            <!-- 演示视频 -->
+            <div class="video-container">
+                <iframe src="//player.bilibili.com/player.html?bvid=BV1R6kvBcEVC&page=1&high_quality=1&autoplay=0" 
+                        scrolling="no" 
+                        border="0" 
+                        frameborder="no" 
+                        framespacing="0" 
+                        allowfullscreen="true"
+                        title="FAGI-PD System Demonstration">
+                </iframe>
+            </div>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-img">
+                        <div class="placeholder-img">Home Assessment</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Accessible Monitoring</h3>
+                        <p>Enables frequent, convenient assessment of gait impairments in home settings, reducing the need for clinical visits.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-img">
+                        <div class="placeholder-img">Real-time Analysis</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Immediate Feedback</h3>
+                        <p>Provides immediate assessment results and trends over time for patients and clinicians.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-img">
+                        <div class="placeholder-img">Longitudinal Tracking</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Disease Progression</h3>
+                        <p>Tracks disease progression and treatment response over time, enabling personalized therapy adjustments.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="bg-light">
+        <div class="container">
+            <h2>Research Team</h2>
+            <div class="authors">
+                <div class="author">
+                    <div class="author-img">JH</div>
+                    <h4>Jianda Han</h4>
+                    <p>Nankai University</p>
+                </div>
+                <div class="author">
+                    <div class="author-img">ZT</div>
+                    <h4>Zhihua Tian</h4>
+                    <p>Nankai University</p>
+                </div>
+                <div class="author">
+                    <div class="author-img">JW</div>
+                    <h4>Jialing Wu</h4>
+                    <p>Tianjin Huanhu Hospital</p>
+                </div>
+                <div class="author">
+                    <div class="author-img">WH</div>
+                    <h4>Weiguang Huo</h4>
+                    <p>Nankai University</p>
+                </div>
+            </div>
+            
+            <div class="collaboration">
+                <p>Collaboration between Nankai University, Tianjin Huanhu Hospital, Imperial College London, and St George's University of London</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="publication">
+        <div class="container">
+            <h2>Publication & Resources</h2>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Paper</h3>
+                        <p>Deep learning-enabled accurate assessment of gait impairments in Parkinson's disease using smartphone videos</p>
+                        <a href="#" class="btn btn-small">Download PDF</a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Code & Data</h3>
+                        <p>Code for data preprocessing, model training, and feature extraction available at Code Ocean</p>
+                        <a href="https://codeocean.com/capsule/7700825" class="btn btn-small" target="_blank" rel="noopener">Access Code</a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Online System</h3>
+                        <p>Try our FAGI-PD system for gait impairment assessment</p>
+                        <a href="https://gaitanalysis.simplaj.fun" class="btn btn-small" target="_blank" rel="noopener">Try Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Weiguang Huo, Ph.D.</p>
+                    <p>College of Artificial Intelligence</p>
+                    <p>Nankai University</p>
+                    <a href="mailto:weiguang.huo@nankai.edu.cn">weiguang.huo@nankai.edu.cn</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Links</h3>
+                    <a href="#abstract">Abstract</a>
+                    <a href="#method">Methodology</a>
+                    <a href="#results">Results</a>
+                    <a href="#demo">Demo</a>
+                    <a href="#team">Team</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Affiliations</h3>
+                    <a href="https://ai.nankai.edu.cn" target="_blank" rel="noopener">Nankai University</a>
+                    <a href="#" target="_blank" rel="noopener">Tianjin Huanhu Hospital</a>
+                    <a href="https://www.imperial.ac.uk" target="_blank" rel="noopener">Imperial College London</a>
+                    <a href="https://www.sgul.ac.uk" target="_blank" rel="noopener">St George's University of London</a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 WRNR. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
