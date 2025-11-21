@@ -5,25 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deep Learning-enabled Gait Assessment in Parkinson's Disease</title>
     <meta name="description" content="A smartphone video-based framework for precise assessment of Parkinson's disease severity using deep learning">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="container">
             <h1>Deep Learning-enabled Accurate Assessment of Gait Impairments in Parkinson's Disease</h1>
-            <p>A novel smartphone video-based framework for precise assessment of Parkinson's disease severity and medication response using deep learning and interpretable digital biomarkers.</p>
+
+            <div class="authors-container">
+                <div class="authors-list">
+                    <span class="author-name">Jianda Han<sup>1,2,†</sup></span>,
+                    <span class="author-name">Zhihua Tian<sup>1,†</sup></span>,
+                    <span class="author-name">Jialing Wu<sup>3,†</sup></span>,
+                    <span class="author-name">Kai Zhang<sup>1</sup></span>,
+                    <span class="author-name">Shaohua Li<sup>1</sup></span>,
+                    <span class="author-name">Fahd Baig<sup>4</sup></span>,
+                    <span class="author-name">Peipei Liu<sup>3</sup></span>,
+                    <span class="author-name">Ravi Vaidyanathan<sup>5,6</sup></span>,
+                    <span class="author-name">Francesca Morgante<sup>4</sup></span>,
+                    <span class="author-name">Weiguang Huo<sup>1,2,*</sup></span>
+                </div>
+
+                <div class="affiliations-list">
+                    <span class="affiliation"><sup>1</sup> College of Artificial Intelligence, Nankai University, Tianjin, China</span>
+                    <span class="affiliation"><sup>2</sup> Institute of Intelligence Technology and Robotic Systems, Shenzhen Research Institute, Nankai University, Shenzhen, China</span>
+                    <span class="affiliation"><sup>3</sup> Department of Neurology, Tianjin Huanhu Hospital, Tianjin, China</span>
+                    <span class="affiliation"><sup>4</sup> Neurosciences and Cell Biology Institute, Neuromodulation and Motor Control Section, City St George's University of London, London, UK</span>
+                    <span class="affiliation"><sup>5</sup> Department of Mechanical Engineering, Imperial College London, London, UK</span>
+                    <span class="affiliation"><sup>6</sup> Dementia Research Institute Care Research & Technology Centre, Imperial College London, London, UK</span>
+                </div>
+
+                <div class="author-notes">
+                    <p><sup>†</sup> These authors contributed equally to this work</p>
+                </div>
+            </div>
+
             <div class="header-buttons">
-                <a href="#abstract" class="btn">Learn More</a>
-                <a href="#demo" class="btn btn-light">Try Demo</a>
+                <a href="#abstract" class="btn btn-primary">Read Abstract</a>
+                <a href="#demo" class="btn btn-outline">View Demo</a>
             </div>
         </div>
     </header>
 
     <section id="abstract">
         <div class="container">
-            <h2>Abstract</h2>
-            <div class="highlight">
-                <p>Gait impairments are among the most prevalent and disabling symptoms in Parkinson's Disease (PD), featuring complex and highly heterogeneous manifestations. We propose a deep learning-based framework to assess gait impairments using smartphone-recorded videos. This framework demonstrated high proficiency in predicting PD severity, with a micro-average area under the receiver operating characteristic curve (AUC) of 0.87 and an F1 score of 0.806, comparable to the average performance of three clinical specialists. Additionally, it effectively discerned the comprehensive efficacy of medications on gait impairments with a precision of 73.68%.</p>
+            <h2 class="section-title">Abstract</h2>
+            <div class="paper-abstract">
+                <p><strong>Background:</strong> Gait impairments are among the most prevalent and disabling symptoms in Parkinson's Disease (PD), featuring complex and highly heterogeneous manifestations.</p>
+                <p><strong>Methods:</strong> We propose a deep learning-based framework to assess gait impairments using smartphone-recorded videos. This framework demonstrated high proficiency in predicting PD severity.</p>
+                <p><strong>Results:</strong> The model achieved a micro-average area under the receiver operating characteristic curve (AUC) of <strong>0.87</strong> and an F1 score of <strong>0.806</strong>, comparable to the average performance of three clinical specialists. Additionally, it effectively discerned the comprehensive efficacy of medications on gait impairments with a precision of <strong>73.68%</strong>.</p>
             </div>
             
             <div class="metrics">
@@ -40,7 +74,7 @@
                     <div class="metric-label">Medication Effect Precision</div>
                 </div>
                 <div class="metric">
-                    <div class="metric-value">Clinician-level</div>
+                    <div class="metric-value">Expert-level</div>
                     <div class="metric-label">Performance</div>
                 </div>
             </div>
@@ -49,13 +83,13 @@
 
     <section id="introduction" class="bg-light">
         <div class="container">
-            <h2>Introduction</h2>
-            <p>Parkinson's disease (PD) is the second most prevalent progressive neurodegenerative disorder, affecting more than 10 million people worldwide. Gait impairments are among the most common and disabling symptoms in PD, characterized by intricate underlying mechanisms and substantial individual variation in clinical manifestations.</p>
+            <h2 class="section-title">Introduction</h2>
+            <p class="lead-text">Parkinson's disease (PD) is the second most prevalent progressive neurodegenerative disorder, affecting more than 10 million people worldwide. Gait impairments are among the most common and disabling symptoms in PD, characterized by intricate underlying mechanisms and substantial individual variation in clinical manifestations.</p>
             
             <div class="card-grid">
                 <div class="card">
-                    <div class="card-img">
-                        <div class="placeholder-img">Gait Impairment Visualization</div>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
                     </div>
                     <div class="card-content">
                         <h3>Problem</h3>
@@ -64,8 +98,8 @@
                 </div>
                 
                 <div class="card">
-                    <div class="card-img">
-                        <div class="placeholder-img">Smartphone Video Analysis</div>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
                     </div>
                     <div class="card-content">
                         <h3>Solution</h3>
@@ -74,8 +108,8 @@
                 </div>
                 
                 <div class="card">
-                    <div class="card-img">
-                        <div class="placeholder-img">Digital Biomarkers</div>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-fingerprint"></i>
                     </div>
                     <div class="card-content">
                         <h3>Innovation</h3>
@@ -88,13 +122,13 @@
 
     <section id="method">
         <div class="container">
-            <h2>Methodology</h2>
-            <p>We developed a novel Siamese contrastive network architecture that efficiently extracts precise spatiotemporal motion characteristics of the entire body joints from gait videos recorded with a single smartphone.</p>
+            <h2 class="section-title">Methodology</h2>
+            <p class="lead-text">We developed a novel Siamese contrastive network architecture that efficiently extracts precise spatiotemporal motion characteristics of the entire body joints from gait videos recorded with a single smartphone.</p>
             
             <div class="card-grid">
                 <div class="card">
-                    <div class="card-img">
-                        <div class="placeholder-img">Siamese Network Architecture</div>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-network-wired"></i>
                     </div>
                     <div class="card-content">
                         <h3>Siamese Contrastive Network</h3>
@@ -103,8 +137,8 @@
                 </div>
                 
                 <div class="card">
-                    <div class="card-img">
-                        <div class="placeholder-img">Skeleton Extraction</div>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-child-reaching"></i>
                     </div>
                     <div class="card-content">
                         <h3>Pose Estimation</h3>
@@ -113,8 +147,8 @@
                 </div>
                 
                 <div class="card">
-                    <div class="card-img">
-                        <div class="placeholder-img">Interpretable Analysis</div>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>
                     </div>
                     <div class="card-content">
                         <h3>Interpretable Framework</h3>
@@ -127,12 +161,12 @@
 
     <section id="results" class="bg-light">
         <div class="container">
-            <h2>Key Results</h2>
+            <h2 class="section-title">Key Results</h2>
             
             <div class="card-grid">
                 <div class="card">
-                    <div class="card-img">
-                        <div class="placeholder-img">UPDRS Prediction Performance</div>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-chart-column"></i>
                     </div>
                     <div class="card-content">
                         <h3>Severity Assessment</h3>
@@ -141,8 +175,8 @@
                 </div>
                 
                 <div class="card">
-                    <div class="card-img">
-                        <div class="placeholder-img">Medication Response</div>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-pills"></i>
                     </div>
                     <div class="card-content">
                         <h3>Medication Effect Discrimination</h3>
@@ -151,8 +185,8 @@
                 </div>
                 
                 <div class="card">
-                    <div class="card-img">
-                        <div class="placeholder-img">Digital Biomarkers</div>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-dna"></i>
                     </div>
                     <div class="card-content">
                         <h3>Biomarker Discovery</h3>
@@ -161,8 +195,8 @@
                 </div>
             </div>
             
-            <div class="highlight">
-                <h3>Clinical Validation</h3>
+            <div class="highlight-box">
+                <h3><i class="fa-solid fa-check-double"></i> Clinical Validation</h3>
                 <p>The model's performance was validated against the consensus of three clinical specialists, demonstrating alignment with expert assessments and the ability to handle inter-rater variability.</p>
             </div>
         </div>
@@ -170,11 +204,13 @@
 
     <section id="demo">
         <div class="container">
-            <h2>Online Assessment System</h2>
-            <p>We developed an online assessment system (FAGI-PD) that enables home-based, objective, routine assessments of gait impairments in Parkinson's disease using smartphone-recorded videos.</p>
+            <h2 class="section-title">Online Assessment System</h2>
+            <p class="lead-text">We developed an online assessment system (FAGI-PD) that enables home-based, objective, routine assessments of gait impairments in Parkinson's disease using smartphone-recorded videos.</p>
             
             <div class="demo-link">
-                <a href="https://gaitanalysis.simplaj.fun" class="btn" target="_blank" rel="noopener">Try FAGI-PD System</a>
+                <a href="https://gaitanalysis.simplaj.fun" class="btn btn-primary" target="_blank" rel="noopener">
+                    <i class="fa-solid fa-play"></i> Try FAGI-PD System
+                </a>
             </div>
             
             <!-- 演示视频 -->
@@ -191,8 +227,8 @@
             
             <div class="card-grid">
                 <div class="card">
-                    <div class="card-img">
-                        <div class="placeholder-img">Home Assessment</div>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-house-medical"></i>
                     </div>
                     <div class="card-content">
                         <h3>Accessible Monitoring</h3>
@@ -201,8 +237,8 @@
                 </div>
                 
                 <div class="card">
-                    <div class="card-img">
-                        <div class="placeholder-img">Real-time Analysis</div>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
                     </div>
                     <div class="card-content">
                         <h3>Immediate Feedback</h3>
@@ -211,11 +247,11 @@
                 </div>
                 
                 <div class="card">
-                    <div class="card-img">
-                        <div class="placeholder-img">Longitudinal Tracking</div>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-chart-line"></i>
                     </div>
                     <div class="card-content">
-                        <h3>Disease Progression</h3>
+                        <h3>Longitudinal Tracking</h3>
                         <p>Tracks disease progression and treatment response over time, enabling personalized therapy adjustments.</p>
                     </div>
                 </div>
@@ -223,64 +259,24 @@
         </div>
     </section>
 
-    <section id="team" class="bg-light">
-        <div class="container">
-            <h2>Research Team</h2>
-            <div class="authors">
-                <div class="author">
-                    <div class="author-img">JH</div>
-                    <h4>Jianda Han</h4>
-                    <p>Nankai University</p>
-                </div>
-                <div class="author">
-                    <div class="author-img">ZT</div>
-                    <h4>Zhihua Tian</h4>
-                    <p>Nankai University</p>
-                </div>
-                <div class="author">
-                    <div class="author-img">JW</div>
-                    <h4>Jialing Wu</h4>
-                    <p>Tianjin Huanhu Hospital</p>
-                </div>
-                <div class="author">
-                    <div class="author-img">WH</div>
-                    <h4>Weiguang Huo</h4>
-                    <p>Nankai University</p>
-                </div>
-            </div>
-            
-            <div class="collaboration">
-                <p>Collaboration between Nankai University, Tianjin Huanhu Hospital, Imperial College London, and St George's University of London</p>
-            </div>
-        </div>
-    </section>
-
     <section id="publication">
         <div class="container">
-            <h2>Publication & Resources</h2>
+            <h2 class="section-title">Resources</h2>
             
-            <div class="card-grid">
-                <div class="card">
+            <div class="card-grid resources-grid">
+                <div class="card resource-card">
                     <div class="card-content">
-                        <h3>Paper</h3>
-                        <p>Deep learning-enabled accurate assessment of gait impairments in Parkinson's disease using smartphone videos</p>
-                        <a href="#" class="btn btn-small">Download PDF</a>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="card-content">
-                        <h3>Code & Data</h3>
+                        <h3><i class="fa-brands fa-github"></i> Code & Data</h3>
                         <p>Code for data preprocessing, model training, and feature extraction available at Code Ocean</p>
-                        <a href="https://codeocean.com/capsule/7700825" class="btn btn-small" target="_blank" rel="noopener">Access Code</a>
+                        <a href="https://codeocean.com/capsule/7700825" class="btn btn-small btn-outline" target="_blank" rel="noopener">Access Code</a>
                     </div>
                 </div>
                 
-                <div class="card">
+                <div class="card resource-card">
                     <div class="card-content">
-                        <h3>Online System</h3>
+                        <h3><i class="fa-solid fa-laptop-code"></i> Online System</h3>
                         <p>Try our FAGI-PD system for gait impairment assessment</p>
-                        <a href="https://gaitanalysis.simplaj.fun" class="btn btn-small" target="_blank" rel="noopener">Try Demo</a>
+                        <a href="https://gaitanalysis.simplaj.fun" class="btn btn-small btn-outline" target="_blank" rel="noopener">Try Demo</a>
                     </div>
                 </div>
             </div>
@@ -292,32 +288,35 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Contact</h3>
-                    <p>Weiguang Huo, Ph.D.</p>
+                    <p><strong>Weiguang Huo, Ph.D.</strong></p>
                     <p>College of Artificial Intelligence</p>
                     <p>Nankai University</p>
                     <a href="mailto:weiguang.huo@nankai.edu.cn">weiguang.huo@nankai.edu.cn</a>
                 </div>
                 
                 <div class="footer-section">
-                    <h3>Links</h3>
-                    <a href="#abstract">Abstract</a>
-                    <a href="#method">Methodology</a>
-                    <a href="#results">Results</a>
-                    <a href="#demo">Demo</a>
-                    <a href="#team">Team</a>
+                    <h3>Navigation</h3>
+                    <ul class="footer-links">
+                        <li><a href="#abstract">Abstract</a></li>
+                        <li><a href="#method">Methodology</a></li>
+                        <li><a href="#results">Results</a></li>
+                        <li><a href="#demo">Demo</a></li>
+                    </ul>
                 </div>
                 
                 <div class="footer-section">
                     <h3>Affiliations</h3>
-                    <a href="https://ai.nankai.edu.cn" target="_blank" rel="noopener">Nankai University</a>
-                    <a href="#" target="_blank" rel="noopener">Tianjin Huanhu Hospital</a>
-                    <a href="https://www.imperial.ac.uk" target="_blank" rel="noopener">Imperial College London</a>
-                    <a href="https://www.sgul.ac.uk" target="_blank" rel="noopener">St George's University of London</a>
+                    <ul class="footer-links">
+                        <li><a href="https://ai.nankai.edu.cn" target="_blank" rel="noopener">Nankai University</a></li>
+                        <li><a href="#" target="_blank" rel="noopener">Tianjin Huanhu Hospital</a></li>
+                        <li><a href="https://www.imperial.ac.uk" target="_blank" rel="noopener">Imperial College London</a></li>
+                        <li><a href="https://www.sgul.ac.uk" target="_blank" rel="noopener">St George's University of London</a></li>
+                    </ul>
                 </div>
             </div>
             
             <div class="copyright">
-                <p>&copy; 2025 WRNR. All rights reserved.</p>
+                <p>&copy; 2025 Deep Learning-enabled Gait Assessment Project. All rights reserved.</p>
             </div>
         </div>
     </footer>
