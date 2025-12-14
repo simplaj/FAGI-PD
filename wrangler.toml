@@ -1,0 +1,5 @@
+name = "fagi-pd"
+compatibility_date = "2025-12-14"
+
+[assets]
+directory = "."
